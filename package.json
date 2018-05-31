@@ -1,6 +1,7 @@
 {
   "name": "comment-app",
   "version": "0.1.0",
+  "homepage": "http://gone-phishing.github.io/react-comments",
   "private": true,
   "dependencies": {
     "material-ui": "^0.20.0",
@@ -12,6 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
